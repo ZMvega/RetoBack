@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>-->
+  <script type="text/javascript" src="js/appoinments.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Citas Laboratorio</title>
+</head>
+<body>
+<div class="bg-imagen"
+     style="">
+  <div style="width: 80%; text-align: center; margin: auto; padding: 2%;">
+    <div class="fs-2">
+      <h1 style="color: green" class="display-2 fw-bold">Laboatorio</h1><br>
+      
+      <div id="listaClientes">
+        <table border="1", bgcolor = "Turquoise", class="table"><tr><th>Fecha</th> <th>Hora</th> <th>Afiliado</th> <th>Laboratorio</th> <th>Opciones</th></tr><tbody id="TbodyCitas"></table></tbody>
+      </div>
+
+      <h4 style="color: rgb(14, 104, 104)" class="fs-2 fw-bold">Registrar Cita</h4><br>
+      <div style="width: 30%; text-align: center; margin: auto; padding: 2%;">
+        <form>
+          <input class="form-control" type="text" id="date" placeholder="Fecha de la cita en formato dd/MM/yyyy"/><br>
+          <input class="form-control" type="text" id="hour" placeholder="Hora de la cita en formato HH:mm"/><br>
+          <input class="form-control" type="number" id="idTest" placeholder="Id del laboratorio"/><br>
+          <input class="form-control" type="number" id="idAffiliate" placeholder="Id del afiliado"/><br>
+
+
+        </form>
+
+        <button class="btn btn-success btn-lg" onclick="leerCitas()">Mostrar </button>
+        <button class="btn btn-success btn-lg" onclick="guardarCitas()">Guardar </button>
+        <button class="btn btn-info btn-lg" onclick="document.location.href='index.html'">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
